@@ -1,4 +1,4 @@
-package com.example.starwarsfiguren
+package com.example.starwarsfiguren.data.model
 
 class Figuren (
 

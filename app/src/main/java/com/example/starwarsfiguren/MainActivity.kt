@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import androidx.databinding.DataBindingUtil
 import com.example.starwarsfiguren.adapter.FigurenAdapter
+import com.example.starwarsfiguren.data.Datasource
 import com.example.starwarsfiguren.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
@@ -19,8 +20,8 @@ class MainActivity : AppCompatActivity() {
 
     binding = DataBindingUtil.setContentView(this, R.layout.activity_main)
                 val figurenListe = Datasource().loadFiguren()
-                binding.figurenRecycler.adapter = FigurenAdapter(this, figurenListe)
-                binding.figurenRecycler.setHasFixedSize(true)
+                binding.recyclerView.adapter = FigurenAdapter(this, figurenListe)
+                binding.recyclerView.setHasFixedSize(true)
 
     }
 }

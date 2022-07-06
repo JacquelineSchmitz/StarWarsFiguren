@@ -1,8 +1,10 @@
-package com.example.starwarsfiguren
+package com.example.starwarsfiguren.data
+
+import com.example.starwarsfiguren.R
+import com.example.starwarsfiguren.data.model.Figuren
 
 
-
-    class Datasource() {
+class Datasource() {
          fun loadFiguren():List<Figuren>{
 
 
@@ -49,7 +51,7 @@ package com.example.starwarsfiguren
             Figuren(
                 "Chewbacca",
                 12.00,
-                R.drawable.Chewbacca,
+                R.drawable.chewbacca,
                 true
             )
         )
